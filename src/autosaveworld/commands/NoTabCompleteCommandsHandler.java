@@ -30,7 +30,6 @@ import autosaveworld.commands.subcommands.ForceRestartSubCommand;
 import autosaveworld.commands.subcommands.HelpSubCommand;
 import autosaveworld.commands.subcommands.LocaleSubCommand;
 import autosaveworld.commands.subcommands.PluginManagerSubCommand;
-import autosaveworld.commands.subcommands.ProcessManagerSubCommand;
 import autosaveworld.commands.subcommands.PurgeSubCommand;
 import autosaveworld.commands.subcommands.ReloadAllSubCommand;
 import autosaveworld.commands.subcommands.ReloadConfigMSGSubCommand;
@@ -59,7 +58,6 @@ public class NoTabCompleteCommandsHandler implements CommandExecutor {
 		subcommandhandlers.put("reloadconfig", new ReloadConfigSubCommand());
 		subcommandhandlers.put("reloadmsg", new ReloadConfigMSGSubCommand());
 		subcommandhandlers.put("locale", new LocaleSubCommand(localeChanger));
-		subcommandhandlers.put("process", new ProcessManagerSubCommand());
 		subcommandhandlers.put("pmanager", new PluginManagerSubCommand());
 		subcommandhandlers.put("forcegc", new ForceGCSubCommand());
 		subcommandhandlers.put("serverstatus", new ServerStatusSubCommand());
