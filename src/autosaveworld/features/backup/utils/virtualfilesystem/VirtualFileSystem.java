@@ -60,6 +60,9 @@ public abstract class VirtualFileSystem {
 		if (isDirectory(dirname)) {
 			enterDirectory(dirname);
 			for (String file : getEntries()) {
+                if (file.equals("..") || file.equals(".")) {
+                    continue;
+                }
 				deleteDirectoryRecursive(file);
 			}
 			leaveDirectory();
